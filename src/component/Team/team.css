@@ -1,0 +1,141 @@
+
+
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.team {
+  background: #fff;
+  padding: 60px 0;
+}
+.team .member {
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 25px;
+  background: #dbd9d9;
+  box-shadow: 10px 20px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.team .member .member-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team .member .social {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  text-align: center;
+}
+
+.team .member .social a {
+  transition: color 0.3s;
+  color: #151515;
+  margin: 0 3px;
+  border-radius: 4px;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.8);
+  transition: ease-in-out 0.3s;
+  color: #484848;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team .member .social a:hover {
+  color: #151515;
+  background: #ffc451;
+}
+
+.team .member .social i {
+  font-size: 18px;
+  line-height: 0;
+}
+
+.team .member .member-info {
+  padding: 25px 15px;
+}
+
+.team .member .member-info h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #151515;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #2c2c2c;
+}
+
+
+
+.team .member:hover .social {
+  opacity: 1;
+  bottom: 15px;
+}
+
+/* ========== Mobile Responsive ========== */
+@media (max-width: 768px) {
+  .team {
+    padding: 40px 0;
+  }
+
+  .team .member {
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 18px;
+  }
+
+  /* Make image smaller */
+  .team .member .member-img img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .team .member .member-info {
+    padding: 15px 12px;
+  }
+
+  .team .member .member-info h4 {
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  .team .member .member-info span {
+    font-size: 12px;
+  }
+
+  .team .member .social a {
+    width: 32px;
+    height: 32px;
+  }
+
+  .team .member .social i {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team {
+    padding: 30px 0;
+  }
+
+  .team .member .member-img img {
+    height: 200px;
+  }
+
+  .team .member .member-info h4 {
+    font-size: 15px;
+  }
+
+  .team .member .member-info span {
+    font-size: 11.5px;
+  }
+}
