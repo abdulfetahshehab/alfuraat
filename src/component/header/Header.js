@@ -37,21 +37,21 @@ export default function Header() {
             <li><a className="nav-link scrollto" href="#portfolio">Works</a></li>
             <li><a className="nav-link scrollto" href="#team">Team</a></li>
             <li className="dropdown">
-              <a href="#"><span>More</span> <i className="bi bi-chevron-down"></i></a>
+              <a href="/"><span>More</span> <i className="bi bi-chevron-down"></i></a>
               <ul>
-                <li><a href="#">Street Light</a></li>
+                <li><a href="#portfolio">Street Light</a></li>
                 <li className="dropdown">
-                  <a href="#"><span>Lighting For</span> <i className="bi bi-chevron-right"></i></a>
+                  <a href="#portfolio"><span>Lighting For</span> <i className="bi bi-chevron-right"></i></a>
                   <ul>
-                    <li><a href="#">Residential</a></li>
-                    <li><a href="#">Hotel</a></li>
-                    <li><a href="#">Office</a></li>
-                    <li><a href="#">Center</a></li>
+                    <li><a href="#portfolio">Residential</a></li>
+                    <li><a href="#portfolio">Hotel</a></li>
+                    <li><a href="#portfolio">Office</a></li>
+                    <li><a href="#portfolio">Center</a></li>
                   </ul>
                 </li>
-                <li><a href="#">Irrigation</a></li>
-                <li><a href="#">Water Pumping</a></li>
-                <li><a href="#">Traffic Light</a></li>
+                <li><a href="#portfolio">Irrigation</a></li>
+                <li><a href="#portfolio">Water Pumping</a></li>
+                <li><a href="#portfolio">Traffic Light</a></li>
               </ul>
             </li>
             <li><a className="nav-link scrollto" href="#contact">Contact</a></li>
@@ -78,28 +78,28 @@ export default function Header() {
 
           {/* Dropdown */}
           <li className="mobile-dropdown">
-            <a href="#" onClick={(e) => { e.preventDefault(); toggleDropdown("more"); }}>
+            <a href="/" onClick={(e) => { e.preventDefault(); toggleDropdown("more"); }}>
               More <i className={`bi ${openDropdown === "more" ? "bi-chevron-up" : "bi-chevron-down"}`}></i>
             </a>
             <ul className={openDropdown === "more" ? "show" : ""}>
-              <li><a href="#" onClick={closeMenu}>Street Light</a></li>
+              <li><a href="#portfolio" onClick={closeMenu}>Street Light</a></li>
 
               {/* Nested Dropdown */}
               <li className="mobile-dropdown">
-                <a href="#" onClick={(e) => { e.preventDefault(); toggleDropdown("lighting"); }}>
+                <a href="/" onClick={(e) => { e.preventDefault(); toggleDropdown("lighting"); }}>
                   Lighting For <i className={`bi ${openDropdown === "lighting" ? "bi-chevron-up" : "bi-chevron-right"}`}></i>
                 </a>
                 <ul className={openDropdown === "lighting" ? "show" : ""}>
-                  <li><a href="#" onClick={closeMenu}>Residential</a></li>
-                  <li><a href="#" onClick={closeMenu}>Hotel</a></li>
-                  <li><a href="#" onClick={closeMenu}>Office</a></li>
-                  <li><a href="#" onClick={closeMenu}>Center</a></li>
+                  <li><a href="#portfolio" onClick={closeMenu}>Residential</a></li>
+                  <li><a href="#portfolio" onClick={closeMenu}>Hotel</a></li>
+                  <li><a href="#portfolio" onClick={closeMenu}>Office</a></li>
+                  <li><a href="#portfolio" onClick={closeMenu}>Center</a></li>
                 </ul>
               </li>
 
-              <li><a href="#" onClick={closeMenu}>Irrigation</a></li>
-              <li><a href="#" onClick={closeMenu}>Water Pumping</a></li>
-              <li><a href="#" onClick={closeMenu}>Traffic Light</a></li>
+              <li><a href="#portfolio" onClick={closeMenu}>Irrigation</a></li>
+              <li><a href="#portfolio" onClick={closeMenu}>Water Pumping</a></li>
+              <li><a href="#portfolio" onClick={closeMenu}>Traffic Light</a></li>
             </ul>
           </li>
 
